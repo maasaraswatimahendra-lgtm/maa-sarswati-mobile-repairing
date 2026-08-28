@@ -1,11 +1,621 @@
-:root{--ink:#15152a;--muted:#65657a;--primary:#6c35ff;--primary2:#9a54ff;--bg:#f7f7fb;--card:#fff;--line:#e8e8f0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}.container{width:min(1120px,92%);margin:auto}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between}.logo{color:var(--ink);text-decoration:none;font-weight:900;letter-spacing:.5px;font-size:20px;line-height:1}.logo span{color:var(--primary)}.logo small{display:block;font-size:9px;letter-spacing:2px;margin-top:5px;color:var(--muted)}nav{display:flex;gap:24px}nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:14px}.menu-btn{display:none;border:0;background:none;font-size:26px}.hero{padding:90px 0;background:radial-gradient(circle at 90% 10%,#e8ddff 0,transparent 38%),linear-gradient(135deg,#fff,#f4f0ff)}.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center}.eyebrow{margin:0 0 8px;color:var(--primary);font-weight:900;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.02;margin:0 0 22px;letter-spacing:-2px}.hero h1 span{color:var(--primary)}.lead{font-size:18px;color:var(--muted);max-width:680px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:12px;text-decoration:none;font-weight:900;border:1px solid transparent}.primary{background:var(--primary);color:white}.whatsapp{background:#1fa855;color:white}.light{background:white;color:var(--primary)}.trust{display:flex;gap:20px;flex-wrap:wrap;color:#454558;font-weight:700;font-size:13px}.hero-card{background:linear-gradient(145deg,#17172d,#35355a);color:#fff;border-radius:28px;padding:45px;text-align:center;box-shadow:0 25px 70px rgba(40,20,90,.2)}.phone-icon{font-size:72px}.hero-card h2{font-size:32px;margin:5px 0}.hero-card p{color:#ddd}.card-link{color:#fff;font-weight:900}.ticker{display:grid;grid-template-columns:repeat(4,1fr);background:#17172d;color:white;text-align:center;font-weight:800;padding:15px 4%}.section{padding:80px 0}.alt{background:white}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:32px}.section-head h2{font-size:38px;margin:0;letter-spacing:-1px}.section-head>p{max-width:520px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}.product-img{height:220px;display:grid;place-items:center;font-size:90px;background:linear-gradient(145deg,#eee9ff,#f8f8ff)}.product div:last-child{padding:22px}.product h3{margin:0;font-size:21px}.product p{color:var(--muted);margin:5px 0 12px}.product strong{color:var(--primary);display:block}.product-btn{width:100%;margin-top:16px;font-size:13px;padding:11px 12px}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service,.why>div{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:25px}.service span{font-size:35px}.service h3{margin:10px 0 5px}.service p,.why p{color:var(--muted);margin:0}.offer-section{padding:70px 0;background:linear-gradient(120deg,var(--primary),var(--primary2));color:#fff}.offer-box{display:flex;justify-content:space-between;align-items:center;gap:30px}.offer-box .eyebrow{color:#e9ddff}.offer-box h2{font-size:45px;margin:0}.offer-box p:not(.eyebrow){color:#eee}.why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.contact{background:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch}.contact h2{font-size:40px;margin:0 0 15px}.map-card{border-radius:24px;min-height:280px;background:linear-gradient(145deg,#eae4ff,#fafafa);display:grid;place-items:center;align-content:center;text-align:center;padding:30px}.map-card>div{font-size:55px}.map-card a{color:var(--primary);font-weight:900}.footer{padding:30px 0;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:13px}.footer b{color:var(--ink)}.footer p{margin:4px 0}@media(max-width:800px){nav{display:none;position:absolute;top:74px;left:0;right:0;background:white;padding:20px;flex-direction:column;box-shadow:0 10px 20px #0001}.nav.open nav{display:flex}.menu-btn{display:block}.hero{padding:60px 0}.hero-grid,.contact-grid{grid-template-columns:1fr}.ticker{grid-template-columns:1fr 1fr;gap:10px}.cards{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr 1fr}.why{grid-template-columns:1fr}.section-head,.offer-box{display:block}.offer-box .btn{margin-top:15px}.footer{display:block}}@media(max-width:480px){.service-grid{grid-template-columns:1fr}.hero h1{letter-spacing:-1px}.hero-card{padding:30px}.section{padding:60px 0}}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* Floating Call + WhatsApp buttons */
-.floating-contact{position:fixed;right:20px;bottom:20px;z-index:100;display:flex;flex-direction:column;gap:10px}
-.float-btn{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;font-size:25px;box-shadow:0 8px 24px rgba(0,0,0,.22);transition:transform .2s,box-shadow .2s;position:relative}
-.float-btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.28)}
-.float-btn span{position:absolute;right:68px;background:#17172d;color:#fff;padding:5px 9px;border-radius:7px;font-size:11px;font-weight:800;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
-.float-btn:hover span{opacity:1}
-.float-call{background:#6c35ff}
-.float-wa{background:#1fa855}
-@media(max-width:480px){.floating-contact{right:14px;bottom:14px;gap:8px}.float-btn{width:54px;height:54px;font-size:23px}.float-btn span{display:none}}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f7f8fc;
+  color: #172033;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+  border-bottom: 1px solid #e8eaf0;
+}
+
+.nav {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  line-height: 1.05;
+}
+
+.logo span {
+  color: #e63946;
+}
+
+.logo small {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #687086;
+  margin-top: 4px;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #e63946;
+}
+
+.menu-btn {
+  display: none;
+  border: 0;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #101828, #253b80);
+  color: #fff;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.hero .eyebrow {
+  color: #ffd166;
+}
+
+h1 {
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #ffd166;
+}
+
+.lead {
+  font-size: 18px;
+  max-width: 700px;
+  color: #e9edf8;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 800;
+  border: 0;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: #e63946;
+  color: #fff;
+}
+
+.whatsapp {
+  background: #20b958;
+  color: #fff;
+}
+
+.light {
+  background: #fff;
+  color: #172033;
+}
+
+.trust {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-weight: 700;
+  color: #dce3f5;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 35px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.phone-icon {
+  font-size: 72px;
+}
+
+.hero-card h2 {
+  font-size: 30px;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ffd166;
+  font-weight: 800;
+}
+
+
+/* ================= TICKER ================= */
+
+.ticker {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #fff;
+  border-bottom: 1px solid #e8eaf0;
+}
+
+.ticker div {
+  text-align: center;
+  padding: 14px;
+  font-weight: 800;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+  padding: 75px 0;
+}
+
+.section.alt {
+  background: #eef1f7;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: end;
+  margin-bottom: 35px;
+}
+
+.section-head h2 {
+  font-size: 38px;
+}
+
+.section-head > p {
+  max-width: 500px;
+  color: #697386;
+}
+
+
+/* ================= BRAND ================= */
+
+.brand-section {
+  margin: 45px 0;
+}
+
+.brand-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-left: 5px solid #e63946;
+  padding-left: 12px;
+}
+
+
+/* ================= PRODUCT CARDS ================= */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product {
+  background: #fff;
+  border: 1px solid #e4e7ee;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(20, 30, 50, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: 0.25s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(20, 30, 50, 0.12);
+}
+
+
+/* ================= PRODUCT IMAGE ================= */
+
+/*
+  IMPORTANT:
+  Image will keep its original proportion.
+  It will NOT stretch or crop.
+*/
+
+.product-img {
+  width: 100%;
+  height: 300px;
+  background: #f5f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  padding: 0;
+}
+
+
+/* Image missing placeholder */
+
+.image-placeholder {
+  display: none;
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 55px;
+  color: #9aa3b5;
+}
+
+.image-placeholder small {
+  font-size: 13px;
+  font-weight: 700;
+  color: #7d879a;
+}
+
+
+/* ================= PRODUCT INFORMATION ================= */
+
+.product-info {
+  padding: 20px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.product p {
+  color: #6c7485;
+  margin-bottom: 10px;
+}
+
+.product strong {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 16px;
+  color: #e63946;
+}
+
+.product-btn {
+  width: 100%;
+  font-size: 14px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.service,
+.why > div {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid #e4e7ee;
+}
+
+.service span {
+  font-size: 34px;
+}
+
+.service h3 {
+  margin: 10px 0;
+}
+
+.service p,
+.why p {
+  color: #697386;
+}
+
+
+/* ================= OFFER ================= */
+
+.offer-section {
+  padding: 55px 0;
+  background: #e63946;
+  color: #fff;
+}
+
+.offer-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.offer-box .eyebrow {
+  color: #ffd166;
+}
+
+.offer-box h2 {
+  font-size: 40px;
+}
+
+
+/* ================= WHY ================= */
+
+.why {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+  background: #fff;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.map-card {
+  border-radius: 22px;
+  background: #eef1f7;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.map-card > div {
+  font-size: 50px;
+}
+
+.map-card a {
+  color: #e63946;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+
+/* ================= FLOATING BUTTONS ================= */
+
+.floating-contact {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.float-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.float-btn span {
+  display: none;
+}
+
+.float-call {
+  background: #e63946;
+}
+
+.float-wa {
+  background: #20b958;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: #101828;
+  color: #fff;
+  padding: 28px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer p {
+  color: #b9c2d2;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 850px) {
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 15px;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .hero-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ticker {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-img {
+    height: 280px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 560px) {
+
+  .hero {
+    padding: 55px 0;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+
+  .section-head,
+  .offer-box,
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards,
+  .service-grid,
+  .why {
+    grid-template-columns: 1fr;
+  }
+
+  .product-img {
+    height: 300px;
+    padding: 12px;
+  }
+
+  .product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .ticker {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ticker div {
+    font-size: 13px;
+  }
+
+  .floating-contact {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .float-btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .section-head h2 {
+    font-size: 32px;
+  }
+
+  .offer-box h2 {
+    font-size: 32px;
+  }
+}
