@@ -619,10 +619,20 @@ footer {
     font-size: 32px;
   }
 }
+
 .loan-text {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 900;
-  margin-top: 12px;
   color: #ffd166;
-  letter-spacing: 1px;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000;
+}
+
+@media (max-width: 560px) {
+  .loan-text {
+    font-size: 27px;
+    letter-spacing: 1px;
+  }
 }
