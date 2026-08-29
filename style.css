@@ -636,3 +636,37 @@ footer {
     letter-spacing: 1px;
   }
 }
+
+@media (max-width: 760px) {
+
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    border: 0;
+    background: transparent;
+    z-index: 1001;
+  }
+
+  .nav nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+
+  .nav nav.open {
+    display: flex;
+  }
+
+  .nav nav a {
+    display: block;
+    padding: 12px 15px;
+  }
+}
