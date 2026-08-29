@@ -10,10 +10,16 @@
   <link rel="stylesheet" href="style.css" />
   <style>
 
-    .logo { display:flex; align-items:center; }
-    .logo img { width:auto; height:58px; max-width:210px; object-fit:contain; display:block; }
+    .logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+    .logo img { width:auto; height:58px; max-width:85px; object-fit:contain; display:block; }
+    .logo-name { display:flex; flex-direction:column; line-height:1; font-size:20px; font-weight:800; }
+    .logo-name b { font-size:22px; }
+    .logo-name small { font-size:9px; margin-top:5px; letter-spacing:1px; }
     @media (max-width:760px) {
-      .logo img { height:48px; max-width:165px; }
+      .logo img { height:45px; max-width:65px; }
+      .logo-name { font-size:15px; }
+      .logo-name b { font-size:17px; }
+      .logo-name small { font-size:7px; }
     }
     .product-tools{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}
     .product-search{flex:1;min-width:230px;padding:14px 16px;border:1px solid #ddd;border-radius:12px;font-size:16px}
@@ -27,6 +33,7 @@
   <div class="container nav">
     <a class="logo" href="#home" aria-label="Maa Sarswati Mobile Repairing">
   <img src="images/logo.png" alt="Maa Sarswati Mobile Repairing Logo">
+  <span class="logo-name">MAA <b>SARSWATI</b><small>MOBILE REPAIRING</small></span>
 </a>
     <button class="menu-btn" aria-label="Open menu">☰</button>
     <nav>
