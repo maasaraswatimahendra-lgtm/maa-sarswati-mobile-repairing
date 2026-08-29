@@ -670,3 +670,16 @@ footer {
     padding: 12px 15px;
   }
 }
+
+.logo img {
+  height: 55px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .logo img {
+    height: 45px;
+  }
+}
