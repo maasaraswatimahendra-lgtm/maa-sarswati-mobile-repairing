@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="All mobile phones available at Maa Sarswati Mobile Repairing, Govindpur Fatuha Patna." />
+  <title>All Mobiles | Maa Sarswati Mobile Repairing</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    .logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+    .logo img { width:auto; height:58px; max-width:85px; object-fit:contain; display:block; }
+    .logo-name { display:flex; flex-direction:column; line-height:1; font-size:20px; font-weight:800; }
+    .logo-name b { font-size:22px; }
+    .logo-name small { font-size:9px; margin-top:5px; letter-spacing:1px; }
+    @media (max-width:760px) {
+      .logo img { height:45px; max-width:65px; }
+      .logo-name { font-size:15px; }
+      .logo-name b { font-size:17px; }
+      .logo-name small { font-size:7px; }
+    }
+    .product-tools{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}
+    .product-search{flex:1;min-width:230px;padding:14px 16px;border:1px solid #ddd;border-radius:12px;font-size:16px}
+    .brand-filter{padding:14px 16px;border:1px solid #ddd;border-radius:12px;font-size:16px;background:#fff;min-width:180px}
+    .no-products{padding:25px;text-align:center;display:none}
+    .brand-section.hidden{display:none}
+
+    /* PRODUCTS DROPDOWN */
+    .product-dropdown {
+      position: relative;
+    }
+
+    .product-dropdown-btn {
+      background: none;
+      border: 0;
+      padding: 0;
+      font: inherit;
+      color: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .product-arrow {
+      font-size: 11px;
+      margin-left: 4px;
+      transition: transform .2s ease;
+    }
+
+    .product-dropdown-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 12px);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 175px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.15);
+      overflow: hidden;
+      z-index: 9999;
+      border: 1px solid #eee;
+    }
+
+    .product-dropdown-menu a {
+      display: block;
+      padding: 14px 18px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .product-dropdown-menu a:hover {
+      background: #f5f5f5;
+    }
+
+    .product-dropdown:hover .product-dropdown-menu,
+    .product-dropdown.open .product-dropdown-menu {
+      display: block;
+    }
+
+    .product-dropdown.open .product-arrow {
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: 760px) {
+      .product-dropdown {
+        width: 100%;
+      }
+
+      .product-dropdown-btn {
+        width: 100%;
+        text-align: left;
+      }
+
+      .product-dropdown-menu {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 8px;
+        box-shadow: none;
+        border: 1px solid #eee;
+      }
+    }
+  
+<style>
+  .page-intro { padding:48px 0 10px; text-align:center; }
+  .page-intro h1 { margin-bottom:10px; }
+  .page-intro p { max-width:700px; margin:0 auto; }
+</style>
+
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="#home" aria-label="Maa Sarswati Mobile Repairing">
+  <img src="images/logo.png" alt="Maa Sarswati Mobile Repairing Logo">
+  <span class="logo-name">MAA <b>SARSWATI</b><small>MOBILE REPAIRING</small></span>
+</a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="#home">Home</a>
+
+      <div class="product-dropdown">
+        <button class="product-dropdown-btn" type="button" aria-expanded="false">
+          Products <span class="product-arrow">▼</span>
+        </button>
+
+        <div class="product-dropdown-menu">
+          <a href="products.html">📱 Mobile</a>
+          <a href="tv.html">📺 TV</a>
+          <a href="accessories.html"> Accessories</a>
+        </div>
+      </div>
+
+      <a href="#services">Services</a>
+      <a href="#offers">Offers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-intro">
+    <div class="container">
+      <p class="eyebrow">📱 Our Collection</p>
+      <h1>All Mobile Phones</h1>
+      <p>Search by mobile name or select a brand to find your phone.</p>
+    </div>
+  </section>
+
+  <section id="products" class="section">
+<div class="container">
+  <div class="section-head">
+    <div><p class="eyebrow">Our Collection</p><h2>Featured Mobiles</h2></div>
+    <p>Search a mobile or select a brand to quickly find your phone.</p>
+  </div>
+
+  <div class="product-tools">
+    <input id="productSearch" class="product-search" type="search" placeholder="🔎 Search mobile name..." aria-label="Search mobile name">
+    <select id="brandFilter" class="brand-filter" aria-label="Filter by brand">
+      <option value="all">All Brands</option>
+      <option value="Samsung">Samsung</option>
+      <option value="Redmi">Redmi</option>
+      <option value="Infinix">Infinix</option>
+      <option value="realme">realme</option>
+      <option value="OPPO">OPPO</option>
+      <option value="vivo">vivo</option>
+      <option value="LAVA">LAVA</option>
+      <option value="HMD">HMD</option>
+    </select>
+  </div>
+
+  <div id="productGroups">
+
+    <!-- SAMSUNG -->
+    <div class="brand-section" data-brand="Samsung">
+      <h2 class="brand-title">📱 Samsung</h2>
+      <div class="cards">
+        <article class="product" data-name="Samsung A07 5G 6GB 128GB" data-brand="Samsung">
+          <div class="product-img"><img src="images/samsung-a07-6-128.jpg" alt="Samsung A07 5G 6GB 128GB" loading="lazy"></div>
+          <div><h3>Samsung A07 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹20,999/-</strong>
+          <a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Samsung%20A07%205G%206%2F128%20chahiye." target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div>
+        </article>
+        <article class="product" data-name="Samsung A07 5G 4GB 128GB" data-brand="Samsung">
+          <div class="product-img"><img src="images/samsung-a07-4-128.jpg" alt="Samsung A07 5G 4GB 128GB" loading="lazy"></div>
+          <div><h3>Samsung A07 5G</h3><p>4GB RAM / 128GB Storage</p><strong>₹18,999/-</strong>
+          <a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Samsung%20A07%205G%204%2F128%20chahiye." target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- REDMI -->
+    <div class="brand-section" data-brand="Redmi">
+      <h2 class="brand-title">📱 Redmi</h2>
+      <div class="cards">
+        <article class="product" data-name="Redmi 15A 5G 6GB 128GB" data-brand="Redmi">
+          <div class="product-img"><img src="images/redmi-15a.jpg" alt="Redmi 15A 5G 6GB 128GB" loading="lazy"></div>
+          <div><h3>Redmi 15A 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹19,499/-</strong>
+          <a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Redmi%2015A%205G%206%2F128%20chahiye." target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div>
+        </article>
+        <article class="product" data-name="Redmi A7 Pro 5G 4GB 64GB" data-brand="Redmi">
+          <div class="product-img"><img src="images/redmi-a7-pro-4-64.jpg" alt="Redmi A7 Pro 5G 4GB 64GB" loading="lazy"></div>
+          <div><h3>Redmi A7 Pro 5G</h3><p>4GB RAM / 64GB Storage</p><strong>₹14,499/-</strong>
+          <a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Redmi%20A7%20Pro%205G%204%2F64%20chahiye." target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- INFINIX -->
+    <div class="brand-section" data-brand="Infinix">
+      <h2 class="brand-title">📱 Infinix</h2>
+      <div class="cards">
+        <article class="product" data-name="Infinix Note Edge 5G 6GB 128GB" data-brand="Infinix">
+          <div class="product-img"><img src="images/infinix-note-edge.jpg" alt="Infinix Note Edge 5G 6GB 128GB" loading="lazy"></div>
+          <div><h3>Infinix Note Edge 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹26,999/-</strong>
+          <a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Infinix%20Note%20Edge%205G%206%2F128%20chahiye." target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- REALME -->
+    <div class="brand-section" data-brand="realme">
+      <h2 class="brand-title">📱 realme</h2>
+      <div class="cards">
+        <article class="product" data-name="realme 16T 5G 6GB 128GB" data-brand="realme"><div class="product-img"><img src="images/realme-16t.jpg" alt="realme 16T 5G 6GB 128GB" loading="lazy"></div><div><h3>realme 16T 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹30,999/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20realme%2016T%205G%206%2F128" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+        <article class="product" data-name="realme 15x 5G 8GB 128GB" data-brand="realme"><div class="product-img"><img src="images/realme-15x.jpg" alt="realme 15x 5G 8GB 128GB" loading="lazy"></div><div><h3>realme 15x 5G</h3><p>8GB RAM / 128GB Storage</p><strong>₹25,999/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20realme%2015x%205G%208%2F128" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+        <article class="product" data-name="realme P4R 5G 6GB 128GB" data-brand="realme"><div class="product-img"><img src="images/realme-p4r.jpg" alt="realme P4R 5G 6GB 128GB" loading="lazy"></div><div><h3>realme P4R 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹23,999/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20realme%20P4R%205G%206%2F128" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+        <article class="product" data-name="realme C83 5G 4GB 128GB" data-brand="realme"><div class="product-img"><img src="images/realme-c83-4-128.jpg" alt="realme C83 5G 4GB 128GB" loading="lazy"></div><div><h3>realme C83 5G</h3><p>4GB RAM / 128GB Storage</p><strong>₹21,499/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20realme%20C83%205G%204%2F128" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+        <article class="product" data-name="realme C83 5G 4GB 64GB" data-brand="realme"><div class="product-img"><img src="images/realme-c83-4-64.jpg" alt="realme C83 5G 4GB 64GB" loading="lazy"></div><div><h3>realme C83 5G</h3><p>4GB RAM / 64GB Storage</p><strong>₹18,499/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20realme%20C83%205G%204%2F64" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+      </div>
+    </div>
+
+    <!-- OPPO -->
+    <div class="brand-section" data-brand="OPPO">
+      <h2 class="brand-title">📱 OPPO</h2>
+      <div class="cards">
+        <article class="product" data-name="OPPO K14x 5G 4GB 128GB" data-brand="OPPO"><div class="product-img"><img src="images/oppo-k14x-4-128.jpg" alt="OPPO K14x 5G 4GB 128GB" loading="lazy"></div><div><h3>OPPO K14x 5G</h3><p>4GB RAM / 128GB Storage</p><strong>₹19,999/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20OPPO%20K14x%205G%204%2F128" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+        <article class="product" data-name="OPPO K14x 5G 6GB 128GB" data-brand="OPPO"><div class="product-img"><img src="images/oppo-k14x-6-128.jpg" alt="OPPO K14x 5G 6GB 128GB" loading="lazy"></div><div><h3>OPPO K14x 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹22,999/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20OPPO%20K14x%205G%206%2F128" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+      </div>
+    </div>
+
+    <!-- VIVO -->
+    <div class="brand-section" data-brand="vivo">
+      <h2 class="brand-title">📱 vivo</h2>
+      <div class="cards">
+        <article class="product" data-name="vivo Y11 5G 4GB 64GB" data-brand="vivo"><div class="product-img"><img src="images/vivo-y11.jpg" alt="vivo Y11 5G 4GB 64GB" loading="lazy"></div><div><h3>vivo Y11 5G</h3><p>4GB RAM / 64GB Storage</p><strong>₹17,999/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20vivo%20Y11%205G%204%2F64" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+        <article class="product" data-name="vivo T5x 5G 6GB 128GB" data-brand="vivo"><div class="product-img"><img src="images/vivo-t5x-6-128.jpg" alt="vivo T5x 5G 6GB 128GB" loading="lazy"></div><div><h3>vivo T5x 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹24,999/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20vivo%20T5x%205G%206%2F128" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+        <article class="product" data-name="vivo T5x 5G 8GB 128GB" data-brand="vivo"><div class="product-img"><img src="images/vivo-t5x-8-128.jpg" alt="vivo T5x 5G 8GB 128GB" loading="lazy"></div><div><h3>vivo T5x 5G</h3><p>8GB RAM / 128GB Storage</p><strong>₹27,999/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20vivo%20T5x%205G%208%2F128" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+      </div>
+    </div>
+
+    <!-- LAVA -->
+    <div class="brand-section" data-brand="LAVA">
+      <h2 class="brand-title">📱 LAVA</h2>
+      <div class="cards">
+        <article class="product" data-name="LAVA Duo 3 5G 6GB 128GB" data-brand="LAVA"><div class="product-img"><img src="images/lava-duo-3.jpg" alt="LAVA Duo 3 5G 6GB 128GB" loading="lazy"></div><div><h3>LAVA Duo 3 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹24,999/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20LAVA%20Duo%203%205G%206%2F128" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+        <article class="product" data-name="LAVA Smart 4 4G 3GB 32GB" data-brand="LAVA"><div class="product-img"><img src="images/lava-smart-4.jpg" alt="LAVA Smart 4 4G 3GB 32GB" loading="lazy"></div><div><h3>LAVA Smart 4 4G</h3><p>3GB RAM / 32GB Storage</p><strong>₹8,999/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20LAVA%20Smart%204%204G%203%2F32" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+        <article class="product" data-name="LAVA AMOLED 2 5G 6GB 128GB" data-brand="LAVA"><div class="product-img"><img src="images/lava-blaze-amoled-2.jpg" alt="LAVA AMOLED 2 5G 6GB 128GB" loading="lazy"></div><div><h3>LAVA AMOLED 2 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹18,499/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20LAVA%20AMOLED%202%205G%206%2F128" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+      </div>
+    </div>
+
+    <!-- HMD -->
+    <div class="brand-section" data-brand="HMD">
+      <h2 class="brand-title">📱 HMD</h2>
+      <div class="cards">
+        <article class="product" data-name="HMD Vibe 2 5G 4GB 64GB" data-brand="HMD">
+          <div class="product-img"><img src="images/hmd-vibe-2.jpg" alt="HMD Vibe 2 5G 4GB 64GB" loading="lazy"></div>
+          <div><h3>HMD Vibe 2 5G</h3><p>4GB RAM / 64GB Storage</p><strong>₹14,999/-</strong>
+          <a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20HMD%20Vibe%202%205G%204%2F64" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div>
+        </article>
+      </div>
+    </div>
+
+  </div>
+  <p id="noProducts" class="no-products">😕 No mobile found. Try another name or brand.</p>
+</div>
+</section>
+</main>
+
+<div class="floating-contact" aria-label="Quick contact buttons">
+<a class="float-btn float-call" href="tel:9304233966" aria-label="Call Maa Sarswati Mobile Repairing">📞<span>Call</span></a>
+<a class="float-btn float-wa" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20product%20ke%20baare%20mein%20jankari%20chahiye." target="_blank" rel="noopener" aria-label="WhatsApp Maa Sarswati Mobile Repairing">💬<span>WhatsApp</span></a>
+</div>
+<footer><div class="container footer"><div><b>MAA SARSWATI MOBILE REPAIRING</b><p>Govindpur, Fatuha, Patna</p></div><p>© <span id="year"></span> Maa Sarswati Mobile Repairing. All rights reserved.</p></div></footer>
+
+<script src="script.js"></script>
+
+<script>
+(function(){
+  const search = document.getElementById('productSearch');
+  const filter = document.getElementById('brandFilter');
+  const groups = document.querySelectorAll('.brand-section');
+  const noProducts = document.getElementById('noProducts');
+
+  function updateProducts(){
+    const q = search.value.trim().toLowerCase();
+    const brand = filter.value;
+    let total = 0;
+
+    groups.forEach(group => {
+      const groupBrand = group.dataset.brand;
+      let visible = 0;
+
+      group.querySelectorAll('.product').forEach(card => {
+        const name = (card.dataset.name || '').toLowerCase();
+        const matchesSearch = !q || name.includes(q);
+        const matchesBrand = brand === 'all' || groupBrand === brand;
+        const show = matchesSearch && matchesBrand;
+
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      group.classList.toggle('hidden', visible === 0);
+      total += visible;
+    });
+
+    noProducts.style.display = total ? 'none' : 'block';
+  }
+
+  search.addEventListener('input', updateProducts);
+  filter.addEventListener('change', updateProducts);
+})();
+</script>
+
+<script>
+(function(){
+  const dropdown = document.querySelector('.product-dropdown');
+  const button = document.querySelector('.product-dropdown-btn');
+
+  if (!dropdown || !button) return;
+
+  button.addEventListener('click', function(e){
+    e.stopPropagation();
+    const isOpen = dropdown.classList.toggle('open');
+    button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  document.addEventListener('click', function(e){
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+</script>
+</body>
+</html>
