@@ -1,115 +1,33 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-<meta
- name="description"
- content="Maa Sarswati Mobile Repairing, Govindpur Fatuha Patna - mobile phones, repairing, exchange, EMI and special offers."
-/>
-
-<meta
- name="keywords"
- content="mobile shop Govindpur, mobile shop Fatuha, mobile repairing Fatuha, 5G mobile Patna, mobile exchange, EMI mobile"
-/>
-
-<meta
- name="google-site-verification"
- content="ZBfA9Qv3mX8L2sR6nT1pK7yH4wC5dE0gI9uO3aS6"
-/>
-
-  <title>
-    Maa Sarswati Mobile Repairing | Mobile Shop Govindpur, Fatuha, Patna
-  </title>
-
+  <meta name="description" content="Maa Sarswati Mobile Repairing, Govindpur Fatuha Patna - mobile phones, repairing, exchange, EMI and special offers." />
+  <meta name="keywords" content="mobile shop Govindpur, mobile shop Fatuha, mobile repairing Fatuha, 5G mobile Patna, mobile exchange, EMI mobile" />
+  <meta name="google-site-verification" content="ZBfA9Qv3mX8L2sR6nT1pK7yH4wC5dE0gI9uO3aS6" />
+  <title>Maa Sarswati Mobile Repairing | Mobile Shop Govindpur, Fatuha, Patna</title>
   <link rel="stylesheet" href="style.css" />
-
   <style>
 
-    /* ================================
-       LOGO
-    ================================= */
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
+    .logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+    .logo img { width:auto; height:58px; max-width:85px; object-fit:contain; display:block; }
+    .logo-name { display:flex; flex-direction:column; line-height:1; font-size:20px; font-weight:800; }
+    .logo-name b { font-size:22px; }
+    .logo-name small { font-size:9px; margin-top:5px; letter-spacing:1px; }
+    @media (max-width:760px) {
+      .logo img { height:45px; max-width:65px; }
+      .logo-name { font-size:15px; }
+      .logo-name b { font-size:17px; }
+      .logo-name small { font-size:7px; }
     }
+    .product-tools{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}
+    .product-search{flex:1;min-width:230px;padding:14px 16px;border:1px solid #ddd;border-radius:12px;font-size:16px}
+    .brand-filter{padding:14px 16px;border:1px solid #ddd;border-radius:12px;font-size:16px;background:#fff;min-width:180px}
+    .no-products{padding:25px;text-align:center;display:none}
+    .brand-section.hidden{display:none}
 
-    .logo img {
-      width: auto;
-      height: 58px;
-      max-width: 85px;
-      object-fit: contain;
-      display: block;
-    }
-
-    .logo-name {
-      display: flex;
-      flex-direction: column;
-      line-height: 1;
-      font-size: 20px;
-      font-weight: 800;
-    }
-
-    .logo-name b {
-      font-size: 22px;
-    }
-
-    .logo-name small {
-      font-size: 9px;
-      margin-top: 5px;
-      letter-spacing: 1px;
-    }
-
-
-    /* ================================
-       PRODUCT TOOLS
-    ================================= */
-
-    .product-tools {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin: 25px 0;
-    }
-
-    .product-search {
-      flex: 1;
-      min-width: 230px;
-      padding: 14px 16px;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      font-size: 16px;
-    }
-
-    .brand-filter {
-      padding: 14px 16px;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      font-size: 16px;
-      background: #fff;
-      min-width: 180px;
-    }
-
-    .no-products {
-      padding: 25px;
-      text-align: center;
-      display: none;
-    }
-
-    .brand-section.hidden {
-      display: none;
-    }
-
-
-    /* ================================
-       PRODUCTS DROPDOWN
-    ================================= */
-
+    /* PRODUCTS DROPDOWN */
     .product-dropdown {
       position: relative;
     }
@@ -167,156 +85,7 @@
       transform: rotate(180deg);
     }
 
-
-    /* ================================
-       REVIEWS
-    ================================= */
-
-    .reviews-section {
-      background: #f8fafc;
-    }
-
-    .review-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-top: 25px;
-    }
-
-    .review-card {
-      background: #fff;
-      border: 1px solid #e8e8e8;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 6px 20px rgba(0,0,0,.06);
-    }
-
-    .review-stars {
-      font-size: 20px;
-      letter-spacing: 2px;
-      margin-bottom: 14px;
-    }
-
-    .review-text {
-      line-height: 1.7;
-      margin: 0 0 16px;
-      color: #333;
-    }
-
-    .review-name {
-      font-weight: 700;
-      font-size: 14px;
-    }
-
-    .review-note {
-      margin: 24px auto 0;
-      max-width: 760px;
-      padding: 13px 16px;
-      border-radius: 10px;
-      background: #fff;
-      border: 1px dashed #ccc;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    .review-form-box {
-      max-width: 760px;
-      margin: 0 auto 32px;
-      background: #fff;
-      border: 1px solid #e8e8e8;
-      border-radius: 18px;
-      padding: 24px;
-      box-shadow: 0 6px 20px rgba(0,0,0,.06);
-    }
-
-    .review-form-box h3 {
-      margin-top: 0;
-    }
-
-    .review-label {
-      display: block;
-      font-weight: 700;
-      margin: 14px 0 7px;
-    }
-
-    .review-input,
-    .review-textarea {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 13px 14px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      font: inherit;
-    }
-
-    .review-textarea {
-      min-height: 110px;
-      resize: vertical;
-    }
-
-    .star-picker {
-      display: flex;
-      gap: 4px;
-      margin: 6px 0 8px;
-    }
-
-    .star-btn {
-      border: 0;
-      background: none;
-      padding: 2px;
-      cursor: pointer;
-      font-size: 34px;
-      line-height: 1;
-      opacity: .35;
-    }
-
-    .star-btn.selected,
-    .star-btn:hover {
-      opacity: 1;
-    }
-
-    .review-status {
-      margin-top: 12px;
-      font-weight: 600;
-      min-height: 20px;
-    }
-
-    .review-date {
-      font-size: 12px;
-      opacity: .65;
-      margin-top: 5px;
-    }
-
-    .reviews-empty {
-      text-align: center;
-      padding: 20px;
-      opacity: .7;
-    }
-
-
-    /* ================================
-       MOBILE
-    ================================= */
-
-    @media (max-width:760px) {
-
-      .logo img {
-        height: 45px;
-        max-width: 65px;
-      }
-
-      .logo-name {
-        font-size: 15px;
-      }
-
-      .logo-name b {
-        font-size: 17px;
-      }
-
-      .logo-name small {
-        font-size: 7px;
-      }
-
+    @media (max-width: 760px) {
       .product-dropdown {
         width: 100%;
       }
@@ -334,1597 +103,228 @@
         box-shadow: none;
         border: 1px solid #eee;
       }
-
-      .review-grid {
-        grid-template-columns: 1fr;
-      }
+    }
+  
+    .reviews-section { background: #f8fafc; }
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 25px;
+    }
+    .review-card {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 6px 20px rgba(0,0,0,.06);
+    }
+    .review-stars {
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .review-text {
+      line-height: 1.7;
+      margin: 0 0 16px;
+      color: #333;
+    }
+    .review-name {
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .review-note {
+      margin: 24px auto 0;
+      max-width: 760px;
+      padding: 13px 16px;
+      border-radius: 10px;
+      background: #fff;
+      border: 1px dashed #ccc;
+      text-align: center;
+      font-size: 14px;
+    }
+    @media (max-width: 760px) {
+      .review-grid { grid-template-columns: 1fr; }
     }
 
-  </style>
-
+  
+    .reviews-section{background:#f8fafc}.review-form-box{max-width:760px;margin:0 auto 32px;background:#fff;border:1px solid #e8e8e8;border-radius:18px;padding:24px;box-shadow:0 6px 20px rgba(0,0,0,.06)}.review-form-box h3{margin-top:0}.review-label{display:block;font-weight:700;margin:14px 0 7px}.review-input,.review-textarea{width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #ddd;border-radius:10px;font:inherit}.review-textarea{min-height:110px;resize:vertical}.star-picker{display:flex;gap:4px;margin:6px 0 8px}.star-btn{border:0;background:none;padding:2px;cursor:pointer;font-size:34px;line-height:1;opacity:.35}.star-btn.selected,.star-btn:hover{opacity:1}.review-status{margin-top:12px;font-weight:600;min-height:20px}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:25px}.review-card{background:#fff;border:1px solid #e8e8e8;border-radius:16px;padding:22px;box-shadow:0 6px 20px rgba(0,0,0,.05)}.review-stars{font-size:19px;letter-spacing:2px;margin-bottom:10px}.review-text{line-height:1.7;margin:0 0 14px;color:#333}.review-name{font-weight:700;font-size:14px}.review-date{font-size:12px;opacity:.65;margin-top:5px}.reviews-empty{text-align:center;padding:20px;opacity:.7}@media(max-width:760px){.review-grid{grid-template-columns:1fr}}
+</style>
 </head>
-
 <body>
-
-<!-- =========================================
-     HEADER / NAVIGATION
-========================================= -->
-
 <header class="header">
-
   <div class="container nav">
-
-```
-<!-- LOGO -->
-
-<a
-  class="logo"
-  href="index.html#home"
-  aria-label="Maa Sarswati Mobile Repairing"
->
-
-  <img
-    src="images/logo.png"
-    alt="Maa Sarswati Mobile Repairing Logo"
-  >
-
-  <span class="logo-name">
-    MAA
-    <b>SARSWATI</b>
-    <small>MOBILE REPAIRING</small>
-  </span>
-
+    <a class="logo" href="#home" aria-label="Maa Sarswati Mobile Repairing">
+  <img src="images/logo.png" alt="Maa Sarswati Mobile Repairing Logo">
+  <span class="logo-name">MAA <b>SARSWATI</b><small>MOBILE REPAIRING</small></span>
 </a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="#home">Home</a>
 
+      <div class="product-dropdown">
+        <button class="product-dropdown-btn" type="button" aria-expanded="false">
+          Products <span class="product-arrow">▼</span>
+        </button>
 
-<!-- MOBILE MENU -->
+        <div class="product-dropdown-menu">
+          <a href="products.html">📱 Mobile</a>
+          <a href="tv.html">📺 TV</a>
+          <a href="accessories.html"> Accessories</a>
+        </div>
+      </div>
 
-<button
-  class="menu-btn"
-  aria-label="Open menu"
-  type="button"
->
-  ☰
-</button>
-
-
-<!-- NAVIGATION -->
-
-<nav>
-
-  <!-- HOME -->
-
-  <a href="index.html#home">
-    Home
-  </a>
-
-
-  <!-- PRODUCTS -->
-
-  <div class="product-dropdown">
-
-    <button
-      class="product-dropdown-btn"
-      type="button"
-      aria-expanded="false"
-    >
-      Products
-      <span class="product-arrow">▼</span>
-    </button>
-
-
-    <div class="product-dropdown-menu">
-
-      <a href="products.html">
-        📱 Mobile
-      </a>
-
-      <a href="tv.html">
-        📺 TV
-      </a>
-
-      <a href="accessories.html">
-        🎧 Accessories
-      </a>
-
-    </div>
-
+      <a href="#services">Services</a>
+      <a href="#offers">Offers</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
-
-
-  <!-- SERVICES -->
-
-  <a href="index.html#services">
-    Services
-  </a>
-
-
-  <!-- OFFERS -->
-
-  <a href="index.html#offers">
-    Offers
-  </a>
-
-
-  <!-- REVIEWS -->
-
-  <a href="index.html#reviews">
-    Reviews
-  </a>
-
-
-  <!-- CONTACT -->
-
-  <a href="index.html#contact">
-    Contact
-  </a>
-
-</nav>
-```
-
-  </div>
-
 </header>
 
-<!-- =========================================
-     MAIN
-========================================= -->
-
 <main>
-
-<!-- =========================================
-     HOME
-========================================= -->
-
 <section id="home" class="hero">
-
   <div class="container hero-grid">
-
-```
-<div>
-
-  <p class="eyebrow">
-    📱 Your Trusted Mobile Store
-  </p>
-
-  <h1>
-    Mobile, Repairing &amp; Exchange —
-    <span>Sab Ek Jagah!</span>
-  </h1>
-
-  <p class="loan-text">
-    LOAN PE PHONE
-  </p>
-
-  <p class="lead">
-    Latest smartphones, reliable mobile repairing,
-    easy EMI options and exciting offers —
-    right here in Govindpur, Fatuha, Patna.
-  </p>
-
-
-  <div class="actions">
-
-    <a
-      class="btn primary"
-      href="tel:9304233966"
-    >
-      📞 Call Now
-    </a>
-
-    <a
-      class="btn whatsapp"
-      href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20mobile%20ke%20baare%20mein%20jankari%20chahiye."
-      target="_blank"
-      rel="noopener"
-    >
-      💬 WhatsApp
-    </a>
-
+    <div>
+      <p class="eyebrow">📱 Your Trusted Mobile Store</p>
+      <h1>Mobile, Repairing &amp; Exchange — <span>Sab Ek Jagah!</span></h1>
+      <p class="loan-text">LOAN PE PHONE</p>
+      <p class="lead">Latest smartphones, reliable mobile repairing, easy EMI options and exciting offers — right here in Govindpur, Fatuha, Patna.</p>
+      <div class="actions">
+        <a class="btn primary" href="tel:9304233966">📞 Call Now</a>
+        <a class="btn whatsapp" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20mobile%20ke%20baare%20mein%20jankari%20chahiye." target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+      <div class="trust"><span>✓ Easy EMI</span><span>✓ Mobile Exchange</span><span>✓ Repairing</span></div>
+    </div>
+    <div class="hero-card"><div class="phone-icon">📱</div><h2>Special Offers</h2><p>Har purchase par exciting gift offers.</p><a href="#offers" class="card-link">View Offers →</a></div>
   </div>
-
-
-  <div class="trust">
-
-    <span>✓ Easy EMI</span>
-
-    <span>✓ Mobile Exchange</span>
-
-    <span>✓ Repairing</span>
-
-  </div>
-
-</div>
-
-
-<div class="hero-card">
-
-  <div class="phone-icon">
-    📱
-  </div>
-
-  <h2>
-    Special Offers
-  </h2>
-
-  <p>
-    Har purchase par exciting gift offers.
-  </p>
-
-  <a
-    href="index.html#offers"
-    class="card-link"
-  >
-    View Offers →
-  </a>
-
-</div>
-```
-
-  </div>
-
 </section>
 
-<!-- =========================================
-     TICKER
-========================================= -->
-
-<section class="ticker">
-
-  <div>
-    🔥 Festival Offers
-  </div>
-
-  <div>
-    🎁 Exciting Gifts
-  </div>
-
-  <div>
-    💳 Easy EMI Available
-  </div>
-
-  <div>
-    🔄 Exchange Facility
-  </div>
-
-</section>
-
-<!-- =========================================
-     PRODUCTS
-========================================= -->
+<section class="ticker"><div>🔥 Festival Offers</div><div>🎁 Exciting Gifts</div><div>💳 Easy EMI Available</div><div>🔄 Exchange Facility</div></section>
 
 <section id="products" class="section">
-
   <div class="container">
+    <div class="section-head">
+      <div><p class="eyebrow">Our Collection</p><h2>⭐ Featured Products</h2></div>
+      <p>Hamare selected best-selling mobiles. Saare phones dekhne ke liye neeche click karein.</p>
+    </div>
 
-```
-<div class="section-head">
+    <div class="cards">
+<article class="product" data-name="Samsung A07 5G 6GB 128GB" data-brand="Samsung">
+          <div class="product-img"><img src="images/samsung-a07-6-128.jpg" alt="Samsung A07 5G 6GB 128GB" loading="lazy"></div>
+          <div><h3>Samsung A07 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹20,999/-</strong>
+          <a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Samsung%20A07%205G%206%2F128%20chahiye." target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div>
+        </article>
+<article class="product" data-name="Samsung A07 5G 4GB 128GB" data-brand="Samsung">
+          <div class="product-img"><img src="images/samsung-a07-4-128.jpg" alt="Samsung A07 5G 4GB 128GB" loading="lazy"></div>
+          <div><h3>Samsung A07 5G</h3><p>4GB RAM / 128GB Storage</p><strong>₹18,999/-</strong>
+          <a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Samsung%20A07%205G%204%2F128%20chahiye." target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div>
+        </article>
+<article class="product" data-name="Redmi 15A 5G 6GB 128GB" data-brand="Redmi">
+          <div class="product-img"><img src="images/redmi-15a.jpg" alt="Redmi 15A 5G 6GB 128GB" loading="lazy"></div>
+          <div><h3>Redmi 15A 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹19,499/-</strong>
+          <a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Redmi%2015A%205G%206%2F128%20chahiye." target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div>
+        </article>
+<article class="product" data-name="Redmi A7 Pro 5G 4GB 64GB" data-brand="Redmi">
+          <div class="product-img"><img src="images/redmi-a7-pro-4-64.jpg" alt="Redmi A7 Pro 5G 4GB 64GB" loading="lazy"></div>
+          <div><h3>Redmi A7 Pro 5G</h3><p>4GB RAM / 64GB Storage</p><strong>₹14,499/-</strong>
+          <a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Redmi%20A7%20Pro%205G%204%2F64%20chahiye." target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div>
+        </article>
+<article class="product" data-name="Infinix Note Edge 5G 6GB 128GB" data-brand="Infinix">
+          <div class="product-img"><img src="images/infinix-note-edge.jpg" alt="Infinix Note Edge 5G 6GB 128GB" loading="lazy"></div>
+          <div><h3>Infinix Note Edge 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹26,999/-</strong>
+          <a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Infinix%20Note%20Edge%205G%206%2F128%20chahiye." target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div>
+        </article>
+<article class="product" data-name="realme 16T 5G 6GB 128GB" data-brand="realme"><div class="product-img"><img src="images/realme-16t.jpg" alt="realme 16T 5G 6GB 128GB" loading="lazy"></div><div><h3>realme 16T 5G</h3><p>6GB RAM / 128GB Storage</p><strong>₹30,999/-</strong><a class="btn whatsapp product-btn" href="https://wa.me/919304233966?text=I%20want%20realme%2016T%205G%206%2F128" target="_blank" rel="noopener">🛒 Buy / Enquiry on WhatsApp</a></div></article>
+    </div>
 
-  <div>
-
-    <p class="eyebrow">
-      Our Collection
-    </p>
-
-    <h2>
-      ⭐ Featured Products
-    </h2>
-
+    <div style="text-align:center;margin-top:28px;">
+      <a class="btn primary" href="products.html">📱 View All Mobiles →</a>
+    </div>
   </div>
-
-  <p>
-    Hamare selected best-selling mobiles.
-    Saare phones dekhne ke liye neeche click karein.
-  </p>
-
-</div>
-
-
-<div class="cards">
-
-
-  <!-- SAMSUNG A07 6/128 -->
-
-  <article
-    class="product"
-    data-name="Samsung A07 5G 6GB 128GB"
-    data-brand="Samsung"
-  >
-
-    <div class="product-img">
-
-      <img
-        src="images/samsung-a07-6-128.jpg"
-        alt="Samsung A07 5G 6GB 128GB"
-        loading="lazy"
-      >
-
-    </div>
-
-
-    <div>
-
-      <h3>
-        Samsung A07 5G
-      </h3>
-
-      <p>
-        6GB RAM / 128GB Storage
-      </p>
-
-      <strong>
-        ₹20,999/-
-      </strong>
-
-
-      <a
-        class="btn whatsapp product-btn"
-        href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Samsung%20A07%205G%206%2F128%20chahiye."
-        target="_blank"
-        rel="noopener"
-      >
-        🛒 Buy / Enquiry on WhatsApp
-      </a>
-
-    </div>
-
-  </article>
-
-
-  <!-- SAMSUNG A07 4/128 -->
-
-  <article
-    class="product"
-    data-name="Samsung A07 5G 4GB 128GB"
-    data-brand="Samsung"
-  >
-
-    <div class="product-img">
-
-      <img
-        src="images/samsung-a07-4-128.jpg"
-        alt="Samsung A07 5G 4GB 128GB"
-        loading="lazy"
-      >
-
-    </div>
-
-
-    <div>
-
-      <h3>
-        Samsung A07 5G
-      </h3>
-
-      <p>
-        4GB RAM / 128GB Storage
-      </p>
-
-      <strong>
-        ₹18,999/-
-      </strong>
-
-
-      <a
-        class="btn whatsapp product-btn"
-        href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Samsung%20A07%205G%204%2F128%20chahiye."
-        target="_blank"
-        rel="noopener"
-      >
-        🛒 Buy / Enquiry on WhatsApp
-      </a>
-
-    </div>
-
-  </article>
-
-
-  <!-- REDMI 15A -->
-
-  <article
-    class="product"
-    data-name="Redmi 15A 5G 6GB 128GB"
-    data-brand="Redmi"
-  >
-
-    <div class="product-img">
-
-      <img
-        src="images/redmi-15a.jpg"
-        alt="Redmi 15A 5G 6GB 128GB"
-        loading="lazy"
-      >
-
-    </div>
-
-
-    <div>
-
-      <h3>
-        Redmi 15A 5G
-      </h3>
-
-      <p>
-        6GB RAM / 128GB Storage
-      </p>
-
-      <strong>
-        ₹19,499/-
-      </strong>
-
-
-      <a
-        class="btn whatsapp product-btn"
-        href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Redmi%2015A%205G%206%2F128%20chahiye."
-        target="_blank"
-        rel="noopener"
-      >
-        🛒 Buy / Enquiry on WhatsApp
-      </a>
-
-    </div>
-
-  </article>
-
-
-  <!-- REDMI A7 PRO -->
-
-  <article
-    class="product"
-    data-name="Redmi A7 Pro 5G 4GB 64GB"
-    data-brand="Redmi"
-  >
-
-    <div class="product-img">
-
-      <img
-        src="images/redmi-a7-pro-4-64.jpg"
-        alt="Redmi A7 Pro 5G 4GB 64GB"
-        loading="lazy"
-      >
-
-    </div>
-
-
-    <div>
-
-      <h3>
-        Redmi A7 Pro 5G
-      </h3>
-
-      <p>
-        4GB RAM / 64GB Storage
-      </p>
-
-      <strong>
-        ₹14,499/-
-      </strong>
-
-
-      <a
-        class="btn whatsapp product-btn"
-        href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Redmi%20A7%20Pro%205G%204%2F64%20chahiye."
-        target="_blank"
-        rel="noopener"
-      >
-        🛒 Buy / Enquiry on WhatsApp
-      </a>
-
-    </div>
-
-  </article>
-
-
-  <!-- INFINIX NOTE EDGE -->
-
-  <article
-    class="product"
-    data-name="Infinix Note Edge 5G 6GB 128GB"
-    data-brand="Infinix"
-  >
-
-    <div class="product-img">
-
-      <img
-        src="images/infinix-note-edge.jpg"
-        alt="Infinix Note Edge 5G 6GB 128GB"
-        loading="lazy"
-      >
-
-    </div>
-
-
-    <div>
-
-      <h3>
-        Infinix Note Edge 5G
-      </h3>
-
-      <p>
-        6GB RAM / 128GB Storage
-      </p>
-
-      <strong>
-        ₹26,999/-
-      </strong>
-
-
-      <a
-        class="btn whatsapp product-btn"
-        href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20Infinix%20Note%20Edge%205G%206%2F128%20chahiye."
-        target="_blank"
-        rel="noopener"
-      >
-        🛒 Buy / Enquiry on WhatsApp
-      </a>
-
-    </div>
-
-  </article>
-
-
-  <!-- REALME 16T -->
-
-  <article
-    class="product"
-    data-name="realme 16T 5G 6GB 128GB"
-    data-brand="realme"
-  >
-
-    <div class="product-img">
-
-      <img
-        src="images/realme-16t.jpg"
-        alt="realme 16T 5G 6GB 128GB"
-        loading="lazy"
-      >
-
-    </div>
-
-
-    <div>
-
-      <h3>
-        realme 16T 5G
-      </h3>
-
-      <p>
-        6GB RAM / 128GB Storage
-      </p>
-
-      <strong>
-        ₹30,999/-
-      </strong>
-
-
-      <a
-        class="btn whatsapp product-btn"
-        href="https://wa.me/919304233966?text=I%20want%20realme%2016T%205G%206%2F128"
-        target="_blank"
-        rel="noopener"
-      >
-        🛒 Buy / Enquiry on WhatsApp
-      </a>
-
-    </div>
-
-  </article>
-
-</div>
-
-
-<!-- VIEW ALL MOBILES -->
-
-<div
-  style="text-align:center;margin-top:28px;"
->
-
-  <a
-    class="btn primary"
-    href="products.html"
-  >
-    📱 View All Mobiles →
-  </a>
-
-</div>
-```
-
-  </div>
-
 </section>
 
-<!-- =========================================
-     SERVICES
-========================================= -->
-
-<section
-  id="services"
-  class="section alt"
->
-
-  <div class="container">
-
-```
-<div class="section-head">
-
-  <div>
-
-    <p class="eyebrow">
-      What We Do
-    </p>
-
-    <h2>
-      Our Services
-    </h2>
-
-  </div>
-
-</div>
-
-
+<section id="services" class="section alt"><div class="container"><div class="section-head"><div><p class="eyebrow">What We Do</p><h2>Our Services</h2></div></div>
 <div class="service-grid">
+  <div class="service"><span>🔧</span><h3>Mobile Repairing</h3><p>Mobile repair and service for common hardware and software issues.</p></div>
+  <div class="service"><span>🔄</span><h3>Mobile Exchange</h3><p>Bring your old phone and ask us about exchange options for a new device.</p></div>
+  <div class="service"><span>💳</span><h3>Easy EMI Options</h3><p>EMI facility available through selected finance partners, subject to eligibility.</p></div>
+  <div class="service"><span>🎁</span><h3>Special Gifts</h3><p>Festival and purchase offers may include exciting gifts and discounts.</p></div>
+</div></div></section>
 
-  <div class="service">
+<section id="offers" class="offer-section"><div class="container offer-box"><div><p class="eyebrow">Limited Time</p><h2>🎁 Spin &amp; Win!</h2><p>Har purchase par gift jeetne ka mauka. Hamara Spin Wheel try karein.</p></div><a class="btn light" href="https://maasaraswatimahendra-lgtm.github.io/maa-sarswati-spin-wheel/" target="_blank" rel="noopener">🎡 Open Spin Wheel</a></div></section>
 
-    <span>🔧</span>
-
-    <h3>
-      Mobile Repairing
-    </h3>
-
-    <p>
-      Mobile repair and service for common hardware
-      and software issues.
-    </p>
-
-  </div>
+<section class="section"><div class="container"><div class="section-head"><div><p class="eyebrow">Why Choose Us</p><h2>Maa Sarswati Mobile Repairing</h2></div></div><div class="why">
+<div><b>📍 Convenient Location</b><p>Govindpur, Fatuha, Patna</p></div>
+<div><b>📞 Quick Support</b><p>Call or WhatsApp for product and repair enquiries.</p></div>
+<div><b>🛍️ One-Stop Shop</b><p>Mobiles, repairing, exchange, EMI and offers.</p></div>
+</div></div></section>
 
 
-  <div class="service">
-
-    <span>🔄</span>
-
-    <h3>
-      Mobile Exchange
-    </h3>
-
-    <p>
-      Bring your old phone and ask us about exchange
-      options for a new device.
-    </p>
-
-  </div>
-
-
-  <div class="service">
-
-    <span>💳</span>
-
-    <h3>
-      Easy EMI Options
-    </h3>
-
-    <p>
-      EMI facility available through selected finance
-      partners, subject to eligibility.
-    </p>
-
-  </div>
-
-
-  <div class="service">
-
-    <span>🎁</span>
-
-    <h3>
-      Special Gifts
-    </h3>
-
-    <p>
-      Festival and purchase offers may include
-      exciting gifts and discounts.
-    </p>
-
-  </div>
-
-</div>
-```
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     OFFERS
-========================================= -->
-
-<section
-  id="offers"
-  class="offer-section"
->
-
-  <div class="container offer-box">
-
-```
-<div>
-
-  <p class="eyebrow">
-    Limited Time
-  </p>
-
-  <h2>
-    🎁 Spin &amp; Win!
-  </h2>
-
-  <p>
-    Har purchase par gift jeetne ka mauka.
-    Hamara Spin Wheel try karein.
-  </p>
-
-</div>
-
-
-<a
-  class="btn light"
-  href="https://maasaraswatimahendra-lgtm.github.io/maa-sarswati-spin-wheel/"
-  target="_blank"
-  rel="noopener"
->
-  🎡 Open Spin Wheel
-</a>
-```
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     WHY CHOOSE US
-========================================= -->
-
-<section class="section">
-
+<section id="reviews" class="section reviews-section">
   <div class="container">
-
-```
-<div class="section-head">
-
-  <div>
-
-    <p class="eyebrow">
-      Why Choose Us
-    </p>
-
-    <h2>
-      Maa Sarswati Mobile Repairing
-    </h2>
-
+    <div class="section-head"><div><p class="eyebrow">Customer Feedback</p><h2>⭐ Customer Reviews</h2></div><p>Apna experience share karein.</p></div>
+    <div class="review-form-box">
+      <h3>Write a Review</h3>
+      <label class="review-label" for="reviewName">Your Name</label>
+      <input class="review-input" id="reviewName" type="text" maxlength="50" placeholder="Apna naam likhein">
+      <label class="review-label">Your Rating</label>
+      <div class="star-picker" id="starPicker">
+        <button type="button" class="star-btn" data-rating="1">★</button><button type="button" class="star-btn" data-rating="2">★</button><button type="button" class="star-btn" data-rating="3">★</button><button type="button" class="star-btn" data-rating="4">★</button><button type="button" class="star-btn" data-rating="5">★</button>
+      </div>
+      <label class="review-label" for="reviewText">Your Review</label>
+      <textarea class="review-textarea" id="reviewText" maxlength="1000" placeholder="Apna experience likhein..."></textarea>
+      <button class="btn primary" id="submitReview" type="button">Submit Review</button>
+      <div class="review-status" id="reviewStatus" role="status"></div>
+    </div>
+    <div id="reviewsList" class="review-grid"></div>
+    <div id="reviewsEmpty" class="reviews-empty">Reviews load ho rahe hain...</div>
   </div>
-
-</div>
-
-
-<div class="why">
-
-  <div>
-
-    <b>
-      📍 Convenient Location
-    </b>
-
-    <p>
-      Govindpur, Fatuha, Patna
-    </p>
-
-  </div>
-
-
-  <div>
-
-    <b>
-      📞 Quick Support
-    </b>
-
-    <p>
-      Call or WhatsApp for product and
-      repair enquiries.
-    </p>
-
-  </div>
-
-
-  <div>
-
-    <b>
-      🛍️ One-Stop Shop
-    </b>
-
-    <p>
-      Mobiles, repairing, exchange, EMI
-      and offers.
-    </p>
-
-  </div>
-
-</div>
-```
-
-  </div>
-
 </section>
 
-<!-- =========================================
-     REVIEWS
-========================================= -->
-
-<section
-  id="reviews"
-  class="section reviews-section"
->
-
-  <div class="container">
-
-```
-<div class="section-head">
-
-  <div>
-
-    <p class="eyebrow">
-      Customer Feedback
-    </p>
-
-    <h2>
-      ⭐ Customer Reviews
-    </h2>
-
-  </div>
-
-  <p>
-    Apna experience share karein.
-  </p>
-
-</div>
-
-
-<!-- REVIEW FORM -->
-
-<div class="review-form-box">
-
-  <h3>
-    Write a Review
-  </h3>
-
-
-  <label
-    class="review-label"
-    for="reviewName"
-  >
-    Your Name
-  </label>
-
-
-  <input
-    class="review-input"
-    id="reviewName"
-    type="text"
-    maxlength="50"
-    placeholder="Apna naam likhein"
-  >
-
-
-  <label class="review-label">
-    Your Rating
-  </label>
-
-
-  <div
-    class="star-picker"
-    id="starPicker"
-  >
-
-    <button
-      type="button"
-      class="star-btn"
-      data-rating="1"
-    >
-      ★
-    </button>
-
-    <button
-      type="button"
-      class="star-btn"
-      data-rating="2"
-    >
-      ★
-    </button>
-
-    <button
-      type="button"
-      class="star-btn"
-      data-rating="3"
-    >
-      ★
-    </button>
-
-    <button
-      type="button"
-      class="star-btn"
-      data-rating="4"
-    >
-      ★
-    </button>
-
-    <button
-      type="button"
-      class="star-btn"
-      data-rating="5"
-    >
-      ★
-    </button>
-
-  </div>
-
-
-  <label
-    class="review-label"
-    for="reviewText"
-  >
-    Your Review
-  </label>
-
-
-  <textarea
-    class="review-textarea"
-    id="reviewText"
-    maxlength="1000"
-    placeholder="Apna experience likhein..."
-  ></textarea>
-
-
-  <button
-    class="btn primary"
-    id="submitReview"
-    type="button"
-  >
-    Submit Review
-  </button>
-
-
-  <div
-    class="review-status"
-    id="reviewStatus"
-    role="status"
-  ></div>
-
-</div>
-
-
-<div
-  id="reviewsList"
-  class="review-grid"
-></div>
-
-
-<div
-  id="reviewsEmpty"
-  class="reviews-empty"
->
-  Reviews load ho rahe hain...
-</div>
-```
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     CONTACT
-========================================= -->
-
-<section
-  id="contact"
-  class="section contact"
->
-
-  <div class="container contact-grid">
-
-```
-<div>
-
-  <p class="eyebrow">
-    Visit Us
-  </p>
-
-  <h2>
-    Contact &amp; Location
-  </h2>
-
-  <p>
-    🏪 <b>Maa Sarswati Mobile Repairing</b>
-  </p>
-
-  <p>
-    📍 Govindpur, Fatuha, Patna
-  </p>
-
-  <p>
-    📞 9304233966
-  </p>
-
-
-  <div class="actions">
-
-    <a
-      class="btn primary"
-      href="tel:9304233966"
-    >
-      Call Shop
-    </a>
-
-
-    <a
-      class="btn whatsapp"
-      href="https://wa.me/919304233966"
-      target="_blank"
-      rel="noopener"
-    >
-      WhatsApp Us
-    </a>
-
-  </div>
-
-</div>
-
-
-<div class="map-card">
-
-  <div>
-    📍
-  </div>
-
-  <h3>
-    Govindpur, Fatuha, Patna
-  </h3>
-
-
-  <a
-    href="https://www.google.com/maps/search/?api=1&query=Govindpur%2C%20Fatuha%2C%20Patna"
-    target="_blank"
-    rel="noopener"
-  >
-    Open in Google Maps →
-  </a>
-
-</div>
-```
-
-  </div>
-
-</section>
-
+<section id="contact" class="section contact"><div class="container contact-grid"><div><p class="eyebrow">Visit Us</p><h2>Contact &amp; Location</h2><p>🏪 <b>Maa Sarswati Mobile Repairing</b></p><p>📍 Govindpur, Fatuha, Patna</p><p>📞 9304233966</p><div class="actions"><a class="btn primary" href="tel:9304233966">Call Shop</a><a class="btn whatsapp" href="https://wa.me/919304233966" target="_blank" rel="noopener">WhatsApp Us</a></div></div>
+<div class="map-card"><div>📍</div><h3>Govindpur, Fatuha, Patna</h3><a href="https://www.google.com/maps/search/?api=1&query=Govindpur%2C%20Fatuha%2C%20Patna" target="_blank" rel="noopener">Open in Google Maps →</a></div></div></section>
 </main>
 
-<!-- =========================================
-     FLOATING CONTACT BUTTONS
-========================================= -->
-
-<div
-  class="floating-contact"
-  aria-label="Quick contact buttons"
->
-
-<a
-class="float-btn float-call"
-href="tel:9304233966"
-aria-label="Call Maa Sarswati Mobile Repairing"
-
->
-
-```
-📞
-```
-
-```
-<span>
-  Call
-</span>
-```
-
-  </a>
-
-<a
-class="float-btn float-wa"
-href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20product%20ke%20baare%20mein%20jankari%20chahiye."
-target="_blank"
-rel="noopener"
-aria-label="WhatsApp Maa Sarswati Mobile Repairing"
-
->
-
-```
-💬
-```
-
-```
-<span>
-  WhatsApp
-</span>
-```
-
-  </a>
-
+<div class="floating-contact" aria-label="Quick contact buttons">
+<a class="float-btn float-call" href="tel:9304233966" aria-label="Call Maa Sarswati Mobile Repairing">📞<span>Call</span></a>
+<a class="float-btn float-wa" href="https://wa.me/919304233966?text=Namaste%20Maa%20Sarswati%20Mobile%20Repairing,%20mujhe%20product%20ke%20baare%20mein%20jankari%20chahiye." target="_blank" rel="noopener" aria-label="WhatsApp Maa Sarswati Mobile Repairing">💬<span>WhatsApp</span></a>
 </div>
 
-<!-- =========================================
-     FOOTER
-========================================= -->
-
-<footer>
-
-  <div class="container footer">
-
-```
-<div>
-
-  <b>
-    MAA SARSWATI MOBILE REPAIRING
-  </b>
-
-  <p>
-    Govindpur, Fatuha, Patna
-  </p>
-
-</div>
-
-
-<p>
-  ©
-  <span id="year"></span>
-  Maa Sarswati Mobile Repairing.
-  All rights reserved.
-</p>
-```
-
-  </div>
-
-</footer>
-
-<!-- =========================================
-     MAIN SCRIPT
-========================================= -->
+<footer><div class="container footer"><div><b>MAA SARSWATI MOBILE REPAIRING</b><p>Govindpur, Fatuha, Patna</p></div><p>© <span id="year"></span> Maa Sarswati Mobile Repairing. All rights reserved.</p></div></footer>
 
 <script src="script.js"></script>
 
-<!-- =========================================
-     PRODUCT DROPDOWN SCRIPT
-========================================= -->
 
 <script>
+(function(){
+  const dropdown = document.querySelector('.product-dropdown');
+  const button = document.querySelector('.product-dropdown-btn');
 
-(function() {
+  if (!dropdown || !button) return;
 
-  const dropdown =
-    document.querySelector(
-      '.product-dropdown'
-    );
+  button.addEventListener('click', function(e){
+    e.stopPropagation();
+    const isOpen = dropdown.classList.toggle('open');
+    button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
 
-  const button =
-    document.querySelector(
-      '.product-dropdown-btn'
-    );
-
-
-  if (!dropdown || !button) {
-    return;
-  }
-
-
-  button.addEventListener(
-    'click',
-    function(e) {
-
-      e.stopPropagation();
-
-      const isOpen =
-        dropdown.classList.toggle(
-          'open'
-        );
-
-      button.setAttribute(
-        'aria-expanded',
-        isOpen ? 'true' : 'false'
-      );
-
+  document.addEventListener('click', function(e){
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
     }
-  );
-
-
-  document.addEventListener(
-    'click',
-    function(e) {
-
-      if (!dropdown.contains(e.target)) {
-
-        dropdown.classList.remove(
-          'open'
-        );
-
-        button.setAttribute(
-          'aria-expanded',
-          'false'
-        );
-
-      }
-
-    }
-  );
-
+  });
 })();
-
 </script>
-
-<!-- =========================================
-     REVIEWS SUPABASE SCRIPT
-========================================= -->
-
 <script>
-
-(function() {
-
-  const URL =
-    'https://spgfonoknacxulbciekm.supabase.co';
-
-  const KEY =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYm9ubmFjeHVsYmNpZWttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgxNDI2NTgsImV4cCI6MjEwMzcxODY1OH0.dN2Ox3fnn9QQD55T5F4LTjDgFUXhzPpNi8CDyqqpuJo';
-
-  const E =
-    URL +
-    '/rest/v1/customer_reviews';
-
-
-  const n =
-    document.getElementById(
-      'reviewName'
-    );
-
-  const t =
-    document.getElementById(
-      'reviewText'
-    );
-
-  const b =
-    document.getElementById(
-      'submitReview'
-    );
-
-  const st =
-    document.getElementById(
-      'reviewStatus'
-    );
-
-  const list =
-    document.getElementById(
-      'reviewsList'
-    );
-
-  const empty =
-    document.getElementById(
-      'reviewsEmpty'
-    );
-
-  const stars =
-    document.querySelectorAll(
-      '.star-btn'
-    );
-
-
-  if (!n || !t || !b) {
-    return;
-  }
-
-
-  let rating = 0;
-
-
-  function set(r) {
-
-    rating = r;
-
-    stars.forEach(
-      function(x) {
-
-        x.classList.toggle(
-          'selected',
-          +x.dataset.rating <= r
-        );
-
-      }
-    );
-
-  }
-
-
-  stars.forEach(
-    function(x) {
-
-      x.onclick =
-        function() {
-
-          set(
-            +x.dataset.rating
-          );
-
-        };
-
-    }
-  );
-
-
-  function esc(v) {
-
-    return String(v).replace(
-      /[&<>"']/g,
-      function(c) {
-
-        return {
-          '&': '&amp;',
-          '<': '&lt;',
-          '>': '&gt;',
-          '"': '&quot;',
-          "'": '&#039;'
-        }[c];
-
-      }
-    );
-
-  }
-
-
-  function sh(r) {
-
-    return '★'.repeat(+r) +
-           '☆'.repeat(5 - +r);
-
-  }
-
-
-  async function load() {
-
-    try {
-
-      const r =
-        await fetch(
-          E +
-          '?select=id,name,rating,review,created_at&order=created_at.desc',
-          {
-            headers: {
-              apikey: KEY,
-              Authorization:
-                'Bearer ' + KEY
-            }
-          }
-        );
-
-
-      if (!r.ok) {
-        throw 0;
-      }
-
-
-      const d =
-        await r.json();
-
-
-      list.innerHTML = '';
-
-
-      if (!d.length) {
-
-        empty.textContent =
-          'Abhi koi review nahi hai. Aap pehla review dein! ⭐';
-
-        empty.style.display =
-          'block';
-
-        return;
-
-      }
-
-
-      empty.style.display =
-        'none';
-
-
-      d.forEach(
-        function(x) {
-
-          const c =
-            document.createElement(
-              'article'
-            );
-
-          c.className =
-            'review-card';
-
-
-          c.innerHTML =
-            '<div class="review-stars">' +
-            sh(x.rating) +
-            '</div>' +
-
-            '<p class="review-text">' +
-            esc(x.review) +
-            '</p>' +
-
-            '<div class="review-name">' +
-            esc(x.name) +
-            '</div>' +
-
-            '<div class="review-date">' +
-            new Date(
-              x.created_at
-            ).toLocaleDateString(
-              'en-IN',
-              {
-                day: '2-digit',
-                month: 'short',
-                year: 'numeric'
-              }
-            ) +
-            '</div>';
-
-
-          list.appendChild(c);
-
-        }
-      );
-
-
-    } catch(e) {
-
-      empty.textContent =
-        'Reviews load nahi ho pa rahe.';
-
-    }
-
-  }
-
-
-  b.onclick =
-    async function() {
-
-      const name =
-        n.value.trim();
-
-      const review =
-        t.value.trim();
-
-
-      if (name.length < 2) {
-
-        st.textContent =
-          'Please apna naam enter karein.';
-
-        return;
-
-      }
-
-
-      if (!rating) {
-
-        st.textContent =
-          'Please rating select karein.';
-
-        return;
-
-      }
-
-
-      if (review.length < 3) {
-
-        st.textContent =
-          'Please apna review likhein.';
-
-        return;
-
-      }
-
-
-      b.disabled =
-        true;
-
-      b.textContent =
-        'Submitting...';
-
-
-      try {
-
-        const r =
-          await fetch(
-            E,
-            {
-              method: 'POST',
-
-              headers: {
-                apikey: KEY,
-                Authorization:
-                  'Bearer ' + KEY,
-                'Content-Type':
-                  'application/json',
-                Prefer:
-                  'return=minimal'
-              },
-
-              body:
-                JSON.stringify({
-                  name,
-                  rating,
-                  review
-                })
-            }
-          );
-
-
-        if (!r.ok) {
-          throw 0;
-        }
-
-
-        n.value = '';
-
-        t.value = '';
-
-        set(0);
-
-
-        st.textContent =
-          '✅ Thank you! Aapka review submit ho gaya.';
-
-
-        await load();
-
-
-      } catch(e) {
-
-        st.textContent =
-          '❌ Review submit nahi ho paya. Dobara try karein.';
-
-      } finally {
-
-        b.disabled =
-          false;
-
-        b.textContent =
-          'Submit Review';
-
-      }
-
-    };
-
-
-  load();
-
-})();
-
+(function(){
+const URL='https://spgfonoknacxulbciekm.supabase.co',KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNwZ2Zvbm9rbmFjeHVsYmNpZWttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgxNDI2NTgsImV4cCI6MjEwMzcxODY1OH0.dN2Ox3fnn9QQD55T5F4LTjDgFUXhzPpNi8CDyqqpuJo',E=URL+'/rest/v1/customer_reviews';
+const n=document.getElementById('reviewName'),t=document.getElementById('reviewText'),b=document.getElementById('submitReview'),st=document.getElementById('reviewStatus'),list=document.getElementById('reviewsList'),empty=document.getElementById('reviewsEmpty'),stars=document.querySelectorAll('.star-btn');if(!n||!t||!b)return;let rating=0;
+function set(r){rating=r;stars.forEach(x=>x.classList.toggle('selected',+x.dataset.rating<=r))}stars.forEach(x=>x.onclick=()=>set(+x.dataset.rating));
+function esc(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}function sh(r){return '★'.repeat(+r)+'☆'.repeat(5-+r)}
+async function load(){try{let r=await fetch(E+'?select=id,name,rating,review,created_at&order=created_at.desc',{headers:{apikey:KEY,Authorization:'Bearer '+KEY}});if(!r.ok)throw 0;let d=await r.json();list.innerHTML='';if(!d.length){empty.textContent='Abhi koi review nahi hai. Aap pehla review dein! ⭐';return}empty.style.display='none';d.forEach(x=>{let c=document.createElement('article');c.className='review-card';c.innerHTML='<div class="review-stars">'+sh(x.rating)+'</div><p class="review-text">'+esc(x.review)+'</p><div class="review-name">'+esc(x.name)+'</div><div class="review-date">'+new Date(x.created_at).toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'})+'</div>';list.appendChild(c)})}catch(e){empty.textContent='Reviews load nahi ho pa rahe.'}}
+b.onclick=async()=>{let name=n.value.trim(),review=t.value.trim();if(name.length<2)return st.textContent='Please apna naam enter karein.';if(!rating)return st.textContent='Please rating select karein.';if(review.length<3)return st.textContent='Please apna review likhein.';b.disabled=true;b.textContent='Submitting...';try{let r=await fetch(E,{method:'POST',headers:{apikey:KEY,Authorization:'Bearer '+KEY,'Content-Type':'application/json',Prefer:'return=minimal'},body:JSON.stringify({name,rating,review})});if(!r.ok)throw 0;n.value='';t.value='';set(0);st.textContent='✅ Thank you! Aapka review submit ho gaya.';await load()}catch(e){st.textContent='❌ Review submit nahi ho paya. Dobara try karein.'}finally{b.disabled=false;b.textContent='Submit Review'}};load()})();
 </script>
-
-<!-- =========================================
-     YEAR
-========================================= -->
-
-<script>
-
-const year =
-  document.getElementById('year');
-
-if (year) {
-
-  year.textContent =
-    new Date().getFullYear();
-
-}
-
-</script>
-
 </body>
 </html>
